@@ -17,7 +17,7 @@ Benefícios do Processamento Local de Recursos AWS
 •	Permite rodar serviços AWS localmente mantendo integração com a nuvem.
 •	Combina benefícios da nuvem com necessidade de processamento local.
 Resumo: Processamento local é útil quando latência, conformidade, custos ou confiabilidade são preocupações, mas ainda se quer aproveitar a infraestrutura e serviços da AWS.
- 
+ ![alt text](/imagens/processamentoLocal.png)
 ________________________________________
 Amazon S3 
 •	Serviço de armazenamento de objetos altamente escalável, seguro e durável.
@@ -44,7 +44,7 @@ ________________________________________
 Desafio 
 Passo a passo
 1.	Criar o diagrama: usar Draw.io para desenhar o fluxo.
- 
+ ![alt text](/imagens/drawIO.png)
 1.	Envio do arquivo: cliente envia JSON com informações de nota fiscal.
 2.	Processamento pelo Lambda: lê, valida e processa os dados.
 3.	Gravação no banco: dados validados vão para o DynamoDB.
@@ -57,6 +57,7 @@ ________________________________________
  
 Passo a passo básico
 1.	Instalar LocalStack (Docker ou pip).
+![alt text](/imagens/localStack.png)
 2.	Certificar que AWS CLI aponta para LocalStack.
 3.	Seguir documentação oficial ou tutoriais como Simulando um ambiente AWS com LocalStack - DEV Community.
 ________________________________________
