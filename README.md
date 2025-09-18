@@ -1,6 +1,8 @@
 # Amazon-S3-AWS-Lambda-
 Automatização com Amazon S3 e AWS Lambda usando LocalStack
+
 Benefícios do Processamento Local de Recursos AWS
+
 1.1 Latência e desempenho
 •	Processar dados localmente reduz o tempo de ida e volta para a nuvem.
 •	Ideal para aplicações em tempo real, IoT ou streaming de dados que exigem respostas imediatas.
@@ -20,6 +22,7 @@ Resumo: Processamento local é útil quando latência, conformidade, custos ou c
  ![alt text](/imagens/processamentoLocal.png)
 ________________________________________
 Amazon S3 
+
 •	Serviço de armazenamento de objetos altamente escalável, seguro e durável.
 •	Ideal para backup, arquivamento e compartilhamento de arquivos.
 Exemplo prático: exame hospitalar
@@ -33,6 +36,7 @@ Benefícios:
 •	Custo-efetivo: diferentes classes de armazenamento otimizam custos.
 ________________________________________
 AWS Lambda
+
 •	Executa código automaticamente sem servidores.
 •	Funciona por evento (ex.: upload de arquivo no S3).
 Exemplo prático: hospital
@@ -42,6 +46,7 @@ Exemplo prático: hospital
 Resumo: Lambda permite processamento rápido e automatizado de arquivos no S3, com execução sugerida máxima de 15 minutos.
 ________________________________________
 Desafio 
+
 Passo a passo
 1.	Criar o diagrama: usar Draw.io para desenhar o fluxo.
  ![alt text](/imagens/drawIO.png)
@@ -51,7 +56,8 @@ Passo a passo
 4.	Retorno ao cliente: resposta via API Gateway.
 Implementação: Python no Lambda para execução automática.
 ________________________________________
-5. LocalStack
+ LocalStack
+
 •	Projeto open-source que simula a AWS localmente, permitindo desenvolvimento e teste offline. localstack/localstack: 💻 A fully functional local AWS cloud stack. Develop and test your cloud & Serverless apps offline
 •	Pode ser usado via Docker ou instalação direta. Simulando um ambiente AWS com LocalStack - DEV Community
  
@@ -61,7 +67,7 @@ Passo a passo básico
 2.	Certificar que AWS CLI aponta para LocalStack.
 3.	Seguir documentação oficial ou tutoriais como Simulando um ambiente AWS com LocalStack - DEV Community.
 ________________________________________
-6. Automatizando S3 Object Lambda com CloudFormation e LocalStack
+ Automatizando S3 Object Lambda com CloudFormation e LocalStack
 6.1 Pré-requisitos
 •	LocalStack rodando localmente.
 •	AWS CLI configurada para LocalStack.
